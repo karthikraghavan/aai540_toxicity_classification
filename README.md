@@ -5,5 +5,6 @@ This is fundamentally a text classification problem in Natural Language Processi
 
 
 
+<img width="3203" height="1714" alt="Architecture" src="https://github.com/user-attachments/assets/e51e5e08-0172-475d-ae30-ded3f5f9e5a7" />
 
 
