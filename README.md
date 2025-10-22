@@ -22,6 +22,11 @@ The input text is cleaned, tokenized, and lemmatized, and is fed into the CI/CD 
 **CI/CD Pipeline**
 The CI/CD pipeline automates the data transformation process, trains the model, performs model evaluation, and registers the model based on the accuracy threshold.
 
+  
+<img width="498" height="272" alt="Screenshot 2025-10-21 at 5 09 00 PM" src="https://github.com/user-attachments/assets/95418b6b-fe6c-4f38-b518-ffdb83ae1e92" />
+
+
+  
 **Model training & Evaluation**
 The model training and evaluation step is part of the CI/CD pipeline. The model leverages XGBoost to perform training. The model is evaluated for accuracy, precision, recall,  F1, and AUC scores.
 
