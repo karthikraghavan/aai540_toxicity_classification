@@ -9,3 +9,26 @@ This is fundamentally a text classification problem in Natural Language Processi
 
 <img width="1113" height="614" alt="Architecture" src="https://github.com/user-attachments/assets/04f9fb9a-541d-43fb-85ee-99e6f8299cf2" />
 
+
+
+The workflow begins with the preparation of both training input data and batch data required for real-time inference. The binary classification pipeline is structured into five major stages:
+
+**Data Preparation**
+The input data is split into train, validation. and test, and is made available for preprocessing.
+
+**Preprocessing & Feature Engineering**
+The input text is cleaned, tokenized, and lemmatized, and is fed into the CI/CD pipeline 
+
+**CI/CD Pipeline**
+The CI/CD pipeline automates the data transformation process, trains the model, performs model evaluation, and registers the model based on the accuracy threshold.
+
+**Model training & Evaluation**
+The model training and evaluation step is part of the CI/CD pipeline. The model leverages XGBoost to perform training. The model is evaluated for accuracy, precision, recall,  F1, and AUC scores.
+
+**Model Deployment**
+The model is retrieved from the cloud registry and deployed to an endpoint for downstream applications to consume the model for inference
+
+**Model Monitoring**
+The model is monitored using AWS Sagemaker’s monitoring job. The job establishes a baseline performance using ground truth labels and raises a CloudWatch alarm if the model performance drifts below the predefined threshold.
+
+
